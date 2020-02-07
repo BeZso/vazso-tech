@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lenyűgöző</title>
+  <meta name="author" content="BeZso">
+  <meta name="copyright" content="BeZso">
+  <meta name="description" content="tesla másolata">
+  <meta name="keywords" content="tesla másolata">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="resset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <video autoplay loop muted poster="hatter.jpg" src="Hatter.mov"></video>
+  <nav>
+    <a class="menupont" href="#">Magunkról</a>
+    <a class="menupont" href="#">Kapcsolat</a>
+    <a class="menupont" href="#">Termékeink</a>
+  </nav>
+  <div class="middle"> 
+    <p>Árvíztűrő tükörfúrógép</p>
+    <div>
+      <a class="gomb" href="">Termékek</a>
+      <a class="gomb" href="">Kategóriák</a>
+      <a class="gomb" href="">Fizetés</a>
+    </div>
+  </div>
+  <footer>&copy; VaZso-Tech Kft. 2019-<span id="year"></span>
+  <script>
+    var d = new Date();
+    var n = d.getFullYear();
+    document.getElementById("year").innerHTML = n;
+  </script>
+  </footer>
+</body>
+</html>

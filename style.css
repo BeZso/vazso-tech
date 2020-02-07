@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200&display=swap&subset=latin-ext');
+html, body {
+   /* border: 1px solid red;*/
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    background: url("hatter.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 40px;
+    font-family: 'work sans';
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    margin-top: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: arial;
+}
+
+.middle {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menupont {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.gomb {
+    font-size: 16px;
+    font-family: arial;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px 30px;
+    width: 150px;
+    display: inline-block;
+}
+
+.gomb:hover {
+    border: 1px solid white;
+}
+
+footer {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: arial;
+    margin-bottom: 10px;
+}
+
+.redline {
+    border: 2px solid red;
+}
+
+@media (max-width: 767px) {
+    video {
+        display: none;
+    }
+}
+
+@media (max-height: 450px) {
+    footer {
+        display: none;
+    }
+}
